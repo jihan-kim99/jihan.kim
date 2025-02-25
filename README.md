@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jihan Kim
 
-## Getting Started
+## Welcome to My Personal Site
 
-First, run the development server:
+This is the personal website of Jihan Kim, showcasing my professional background, projects, and expertise in cloud architecture for AI applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About Me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I'm a Computer Science student at Hanyang University specializing in designing scalable cloud architectures for AI applications. I leverage my expertise in Kubernetes, Terraform, and AWS to build and deploy resilient AI solutions. I'm passionate about creating efficient, reliable infrastructure to support cutting-edge AI services and research.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Skills
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Programming**: TypeScript, Python, JavaScript (React.js, Next.js), Node.js, PyTorch
+- **Cloud & DevOps**: AWS, Kubernetes, Docker, Terraform, Git, CI/CD
+- **Soft Skills**: Leadership, Communication, Problem-solving, Collaboration, Time Management
+- **Languages**: Korean (Native), English (Proficient), Chinese (Proficient), Japanese (Proficient)
 
-## Learn More
+## Projects
 
-To learn more about Next.js, take a look at the following resources:
+### Network-aware Kubernetes Scheduler (Capstone Project)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Developed a network-aware Kubernetes scheduler optimized for multi-region ML deployments, achieving 30-60% performance improvements on AWS by minimizing network latency using kubeadm, Terraform.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Chain-of-Thought Model Fine-tuning
 
-## Deploy on Vercel
+Fine-tuned a chain-of-thought model resulting in a 5% performance boost (measured by F1-score).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Future Korean Peninsula Research Association Website
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed a streamlined and reliable portfolio website using Gatsby, deployed on Netlify. Engineered a dynamic content management system using Next.js and Firebase to empower the association to manage notifications and research publications with ease.
+
+## Experience
+
+- **OrcaAI Inc.** | Full Stack Web Developer | January 2024 - December 2024  
+  Designed and deployed a scalable image generation feature for the AIRA chatbot on AWS EKS, using Terraform, Python, and a custom middleware. This utilized OpenAI to generate contextually relevant images from user chats with Stable Diffusion, and the frontend included character-based image detection, a dynamic generation slider, and a context button, which improved user understanding and engagement.
+
+## Education
+
+- **Bachelor of Computer Science** from Hanyang University, Seoul (March 2019 - Present, Expected Graduation: January 2025)
+
+## Contact
+
+- Email: jinnkenny99@gmail.com
+- Phone: (+82) 10 4197 8059
+- GitHub: [github.com/jihan-kim99](https://github.com/jihan-kim99)
+
+---
+
+© Jihan Kim | Last Updated: 2024
