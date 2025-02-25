@@ -1,94 +1,98 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import { Header } from "@/components/Header";
+import { ProjectCard } from "@/components/ProjectCard";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { StartupProject } from "@/components/StartupProject";
+import { Experience } from "@/components/Experience";
+import { Education } from "@/components/Education";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const projects = [
+    {
+      title: "Toy Bot",
+      description: "A character chatting application powered by AI",
+      imageUrl: "/toybot.png",
+      projectUrl: "https://toy-bot.vercel.app",
+    },
+    {
+      title: "Novelistic",
+      description: "AI-powered novel writing platform",
+      imageUrl: "/novelistic.png",
+      projectUrl: "https://novelistic.vercel.app",
+    },
+    {
+      title: "FKPRA",
+      description: "Future Korean Peninsula Residents Association Homepage",
+      imageUrl: "/fkpra.png",
+      projectUrl: "https://fkpra.com",
+    },
+  ];
 
-        <div className={styles.ctas}>
+  return (
+    <div className={styles.container}>
+      <ThemeToggle />
+      <Header />
+
+      <section className={`${styles.about} animate-fade-in`}>
+        <h2>About Me</h2>
+        <p>
+          I&apos;m a Computer Science graduate from Hanyang University,
+          specializing in designing scalable cloud architectures for AI
+          applications. With expertise in Kubernetes, Terraform, and AWS, I
+          focus on building resilient AI solutions. Currently seeking exciting
+          opportunities in Canada to contribute my skills and experience in
+          cloud infrastructure and AI development.
+        </p>
+      </section>
+
+      <section className={`${styles.startup} animate-fade-in`}>
+        <h2>My Startup</h2>
+        <StartupProject
+          title="AIRA"
+          description="An innovative character chatbot application powered by AI that enables users to chat with images. Experience the next generation of AI conversation."
+          imageUrl="/aira.png"
+          appStoreUrl="https://apps.apple.com/us/app/aira-ai-chat-with-images/id6499257852"
+          playStoreUrl="https://play.google.com/store/apps/details?id=site.orcaai.app&hl=en"
+        />
+      </section>
+
+      <section className={`${styles.projects} animate-fade-in`}>
+        <h2>Featured Projects</h2>
+        <div className={styles.projectGrid}>
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
+      </section>
+
+      <section className={`${styles.experience} animate-fade-in`}>
+        <h2>Work Experience</h2>
+        <Experience />
+      </section>
+
+      <section className={`${styles.education} animate-fade-in`}>
+        <h2>Education</h2>
+        <Education />
+      </section>
+
+      <section className={`${styles.skills} animate-fade-in`}>
+        <h2>Skills</h2>
+        <Skills />
+      </section>
+
+      <footer className={styles.footer}>
+        <div className={styles.contact}>
+          <a href="mailto:jinnkenny99@gmail.com">📧 jinnkenny99@gmail.com</a>
+          <a href="tel:+821041978059">📱 (+82) 10 4197 8059</a>
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://github.com/jihan-kim99"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
+            💻 GitHub
           </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
       </footer>
     </div>
   );

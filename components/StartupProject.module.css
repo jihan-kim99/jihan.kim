@@ -1,0 +1,83 @@
+.startupContainer {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.startupContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.startupContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.startupInfo {
+  flex: 1;
+}
+
+.startupTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.startupDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.storeLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.storeButton {
+  transition: transform 0.2s ease;
+}
+
+.storeButton:hover {
+  transform: scale(1.05);
+}
+
+.storeBadge {
+  object-fit: contain;
+}
+
+.startupImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startupImage {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .startupContent {
+    flex-direction: column-reverse;
+  }
+
+  .startupImageContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .storeLinks {
+    justify-content: center;
+  }
+}
