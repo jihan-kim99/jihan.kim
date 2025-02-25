@@ -41,7 +41,6 @@ Developed a streamlined and reliable portfolio website using Gatsby, deployed on
 ## Contact
 
 - Email: jinnkenny99@gmail.com
-- Phone: (+82) 10 4197 8059
 - GitHub: [github.com/jihan-kim99](https://github.com/jihan-kim99)
 
 ---
