@@ -30,13 +30,18 @@ export const StartupProject: React.FC<StartupProjectProps> = ({
               rel="noopener noreferrer"
               className={styles.storeButton}
             >
-              <Image
-                src="/appstore-badge.svg"
-                alt="Download on App Store"
-                width={135}
-                height={40}
-                className={styles.storeBadge}
-              />
+              <div
+                style={{ position: "relative", width: "135px", height: "40px" }}
+              >
+                <Image
+                  src="/appstore-badge.svg"
+                  alt="Download on App Store"
+                  fill
+                  sizes="135px"
+                  className={styles.storeBadge}
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </a>
             <a
               href={playStoreUrl}
@@ -50,6 +55,7 @@ export const StartupProject: React.FC<StartupProjectProps> = ({
                 width={135}
                 height={40}
                 className={styles.storeBadge}
+                style={{ objectFit: "cover" }}
               />
             </a>
           </div>
@@ -61,6 +67,7 @@ export const StartupProject: React.FC<StartupProjectProps> = ({
             width={300}
             height={600}
             className={styles.startupImage}
+            style={{ objectFit: "cover" }}
           />
         </div>
       </div>
