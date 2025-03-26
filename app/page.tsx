@@ -39,10 +39,11 @@ export default function Home() {
         <p>
           I&apos;m a Computer Science graduate from Hanyang University,
           specializing in designing scalable cloud architectures for AI
-          applications. With expertise in Kubernetes, Terraform, and AWS, I
-          focus on building resilient AI solutions. Currently seeking exciting
-          opportunities in Canada to contribute my skills and experience in
-          cloud infrastructure and AI development.
+          applications and Web development experience. With expertise in
+          Kubernetes, Terraform, and AWS, I focus on building resilient AI
+          solutions. Currently seeking exciting opportunities in Canada to
+          contribute my skills and experience in cloud infrastructure and AI
+          development.
         </p>
       </section>
 
@@ -84,7 +85,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.contact}>
           <a href="mailto:jinnkenny99@gmail.com">📧 jinnkenny99@gmail.com</a>
-          <a href="tel:+821041978059">📱 (+82) 10 4197 8059</a>
+          <a href="tel:+17429999202">📱 (+1) 742 999 9202</a>
           <a
             href="https://github.com/jihan-kim99"
             target="_blank"
