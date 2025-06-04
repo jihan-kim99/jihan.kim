@@ -19,18 +19,22 @@ export const Skills: React.FC = () => {
   return (
     <div className={styles.skillsContainer}>
       <SkillCategory
-        title="Programming"
+        title="Technical Skills"
         skills={[
-          "TypeScript",
-          "Python",
-          "JavaScript (React.js, Next.js)",
-          "Node.js",
-          "PyTorch",
+          "Languages: JavaScript (ES6+), TypeScript, C/C++, Node.js, Python, HTML, CSS",
+          "Technologies: React, Node.js, MongoDB, BigQuery, AWS (EKS, EC2, S3), Kubernetes, Docker, Terraform, Git, GitHub, Diffusers, OpenCV",
+          "Database: MongoDB",
         ]}
       />
       <SkillCategory
-        title="Cloud & DevOps"
-        skills={["AWS", "Kubernetes", "Docker", "Terraform", "Git", "CI/CD"]}
+        title="Languages we might use to chat sometimes"
+        skills={[
+          "Korean (Native)",
+          "English (Fluent)",
+          "Chinese (Fluent)",
+          "Japanese (Fluent)",
+          "Arabic (Only few words)",
+        ]}
       />
       <SkillCategory
         title="Soft Skills"
@@ -39,16 +43,8 @@ export const Skills: React.FC = () => {
           "Communication",
           "Problem-solving",
           "Collaboration",
+          "Cooking(Very Good)",
           "Time Management",
-        ]}
-      />
-      <SkillCategory
-        title="Languages"
-        skills={[
-          "Korean (Native)",
-          "English (Proficient)",
-          "Chinese (Proficient)",
-          "Japanese (Proficient)",
         ]}
       />
     </div>

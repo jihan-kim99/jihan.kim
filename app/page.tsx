@@ -3,8 +3,6 @@ import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { StartupProject } from "@/components/StartupProject";
-import { Experience } from "@/components/Experience";
-import { Education } from "@/components/Education";
 import { Skills } from "@/components/Skills";
 
 export default function Home() {
@@ -59,7 +57,7 @@ export default function Home() {
       </section>
 
       <section className={`${styles.projects} animate-fade-in`}>
-        <h2>Featured Projects</h2>
+        <h2>My Toys</h2>
         <div className={styles.projectGrid}>
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
@@ -67,18 +65,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${styles.experience} animate-fade-in`}>
-        <h2>Work Experience</h2>
-        <Experience />
-      </section>
-
-      <section className={`${styles.education} animate-fade-in`}>
-        <h2>Education</h2>
-        <Education />
-      </section>
-
       <section className={`${styles.skills} animate-fade-in`}>
-        <h2>Skills</h2>
+        <h2>Things I Can Do</h2>
         <Skills />
       </section>
 
