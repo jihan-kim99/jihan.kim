@@ -25,6 +25,18 @@ export default function Home() {
       imageUrl: "/fkpra.png",
       projectUrl: "https://fkpra.com",
     },
+    {
+      title: "Small Happiness",
+      description: "A wellness and happiness focused website",
+      imageUrl: "/file.svg",
+      projectUrl: "https://smallhappiness.ca",
+    },
+    {
+      title: "Lacey Tattoo",
+      description: "Professional tattoo artist portfolio and booking site",
+      imageUrl: "/file.svg",
+      projectUrl: "https://laceytattoo.vercel.app/",
+    },
   ];
 
   return (
@@ -32,7 +44,7 @@ export default function Home() {
       <ThemeToggle />
       <Header />
 
-      <section className={`${styles.about} animate-fade-in`}>
+      <section className={styles.about}>
         <h2>About Me</h2>
         <p>
           I&apos;m a Computer Science graduate from Hanyang University,
@@ -45,7 +57,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className={`${styles.startup} animate-fade-in`}>
+      <section className={styles.startup}>
         <h2>My Startup</h2>
         <StartupProject
           title="AIRA"
@@ -56,8 +68,8 @@ export default function Home() {
         />
       </section>
 
-      <section className={`${styles.projects} animate-fade-in`}>
-        <h2>My Toys</h2>
+      <section className={styles.projects}>
+        <h2>My Works</h2>
         <div className={styles.projectGrid}>
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
@@ -65,8 +77,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${styles.skills} animate-fade-in`}>
-        <h2>Things I Can Do</h2>
+      <section className={styles.skills}>
+        <h2>What I Can Do</h2>
         <Skills />
       </section>
 

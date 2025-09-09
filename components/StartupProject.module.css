@@ -4,12 +4,6 @@
   background-color: var(--card-bg);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.startupContainer:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .startupContent {
@@ -41,14 +35,6 @@
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
-}
-
-.storeButton {
-  transition: transform 0.2s ease;
-}
-
-.storeButton:hover {
-  transform: scale(1.05);
 }
 
 .storeBadge {
