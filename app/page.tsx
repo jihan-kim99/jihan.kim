@@ -26,10 +26,10 @@ export default function Home() {
       projectUrl: "https://fkpra.com",
     },
     {
-      title: "Small Happiness",
-      description: "A wellness and happiness focused website",
+      title: "K10 HR",
+      description: "HR company homepage",
       imageUrl: "/file.svg",
-      projectUrl: "https://smallhappiness.ca",
+      projectUrl: "https://k10-hr.vercel.app/",
     },
     {
       title: "Lacey Tattoo",
@@ -61,7 +61,7 @@ export default function Home() {
         <h2>My Startup</h2>
         <StartupProject
           title="AIRA"
-          description="An innovative character chatbot application powered by AI that enables users to chat with images. Experience the next generation of AI conversation."
+          description="A fun AI chatbot where you can talk with characters and create images while chatting. It makes conversations more visual and interactive."
           imageUrl="/aira.png"
           appStoreUrl="https://apps.apple.com/us/app/aira-ai-chat-with-images/id6499257852"
           playStoreUrl="https://play.google.com/store/apps/details?id=site.orcaai.app&hl=en"
@@ -85,7 +85,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.contact}>
           <a href="mailto:jinnkenny99@gmail.com">📧 jinnkenny99@gmail.com</a>
-          <a href="tel:+17429999202">📱 (+1) 742 999 9202</a>
+          <a href="tel:+19028887072">📱 (+1) 902 888 7072</a>
           <a
             href="https://github.com/jihan-kim99"
             target="_blank"

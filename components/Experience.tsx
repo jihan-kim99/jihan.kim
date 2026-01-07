@@ -37,9 +37,9 @@ export const Experience: React.FC = () => {
         company="OrcaAI Inc., Seoul"
         period="January 2024 - December 2024"
         description={[
-          "Designed and deployed a scalable image generation feature for the AIRA chatbot on AWS EKS, using Terraform, Python, and a custom middleware.",
-          "Utilized OpenAI to generate contextually relevant images from user chats with Stable Diffusion.",
-          "Developed frontend with character-based image detection, a dynamic generation slider, and a context button, improving user understanding and engagement.",
+          "Built an image creation feature for the AIRA chatbot using AWS, Terraform, and Python.",
+          "Made it so users can create images from their conversations using AI.",
+          "Added easy-to-use controls and features that helped users better understand how to create images.",
         ]}
       />
     </div>
