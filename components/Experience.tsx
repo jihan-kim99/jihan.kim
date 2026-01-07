@@ -42,6 +42,15 @@ export const Experience: React.FC = () => {
           "Added easy-to-use controls and features that helped users better understand how to create images.",
         ]}
       />
+      <ExperienceItem
+        title="Graduation Project"
+        company="Hanyang University"
+        period="2024"
+        description={[
+          "Built a network-aware scheduler for Kubernetes that optimizes distributed deep learning jobs.",
+          "Reduced training time by 16-34% by placing jobs on nodes with better network connections.",
+        ]}
+      />
     </div>
   );
 };
